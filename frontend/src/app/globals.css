@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '@mdxeditor/editor/style.css';
+
+*:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Ensure it has high specificity */
+html body [class]:focus {
+  outline: none !important;
+}
+@layer base {
+    @font-face {
+        font-family: 'Rules';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url("../public/fonts/Rules-Light.woff") format('woff');
+    }
+
+    @font-face {
+        font-family: 'Rules';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url("../public/fonts/Rules-Regular.woff") format('woff');
+    }
+
+    @font-face {
+        font-family: 'Rules';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url("../public/fonts/Rules-Medium.woff") format('woff');
+    }
+
+    @font-face {
+        font-family: 'Rules';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url("../public/fonts/Rules-Bold.woff") format('woff');
+    }
+
+    @font-face {
+        font-family: 'Rules';
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url("../public/fonts/Rules-ExtraBold.woff") format('woff');
+    }
+
+    @font-face {
+        font-family: 'Rules';
+        font-style: italic;
+        font-weight: 300;
+        font-display: swap;
+        src: url("../public/fonts/Rules-LightItalic.woff") format('woff');
+    }
+
+    @font-face {
+        font-family: 'Rules';
+        font-style: italic;
+        font-weight: 700;
+        font-display: swap;
+        src: url("../public/fonts/Rules-BoldItalic.woff") format('woff');
+    }
+
+    @font-face {
+        font-family: 'Rules';
+        font-style: italic;
+        font-weight: 800;
+        font-display: swap;
+        src: url("../public/fonts/Rules-ExtraBoldItalic.woff") format('woff');
+    }
+
+    @font-face {
+      font-family: 'BPdots';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url('../public/fonts/BPdotsPlus.otf') format('otf');
+    }
+}
+
+
+.h1 {
+  @apply font-sans;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: -1.569px;
+}
+
+.p{
+  @apply font-sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+  letter-spacing: -0.16px;
+}
+
+.h2 {
+  @apply font-sans;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 100%;
+  letter-spacing: -1.569px;
+}
+
+.hsub{
+  @apply font-sans;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -0.6px;
+}
+
+.l {
+  @apply font-mono;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -0.352px;
+}
