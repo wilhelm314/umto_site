@@ -1,6 +1,6 @@
 ## Instalation
 
-`git clone git@github.com:wilhelm314/llmwrap.git`
+`git clone git@github.com:wilhelm314/umto_site.git`
 
 `cd llmwrap`
 
